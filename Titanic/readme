@@ -1,0 +1,84 @@
+🚢 Titanic Survival Prediction – Machine Learning Project
+This project uses machine learning to predict survival outcomes for passengers aboard the Titanic based on features like age, sex, class, fare, etc.
+
+🧠 Project Objective
+Predict whether a passenger survived (binary classification)
+
+Use preprocessing, feature selection, and regularization techniques
+
+Compare performance of multiple models (Logistic Regression, Decision Tree, Random Forest)
+
+📂 Dataset
+Source: Kaggle Titanic Dataset
+
+Target variable: Survived (0 = No, 1 = Yes)
+
+🔍 Features Used
+Pclass
+
+Sex (encoded)
+
+Age (filled with mean)
+
+Fare
+
+SibSp, Parch
+
+Embarked (encoded)
+
+Engineered features like Title (optional)
+
+🧼 Preprocessing Steps
+Handled missing values (Age, Embarked, Cabin)
+
+Label encoded categorical features
+
+Feature selection using Chi-Square
+
+Correlation heatmap (used during analysis)
+
+⚙️ Models Trained
+Logistic Regression (with L1 & L2 regularization)
+
+Decision Tree Classifier (tuned with max_depth, criterion, etc.)
+
+Random Forest Classifier (tuned with max_features, class_weight, etc.)
+
+📈 Evaluation Metrics
+Accuracy
+
+Confusion Matrix
+
+Cross-validation score
+
+🔧 Tools & Libraries
+Python, Pandas, NumPy
+
+scikit-learn
+
+Matplotlib, Seaborn
+
+✅ Results
+Best model: Random Forest with tuned hyperparameters
+
+Accuracy: 84%
+
+Strong generalization on test set
+
+📚 Learnings
+Difference between L1 and L2 regularization
+
+How to apply Chi-Square for feature selection
+
+Regularization in tree-based models
+
+Preventing overfitting using model tuning
+
+💡 Future Improvements
+Try ensemble methods like XGBoost
+
+Use pipelines for cleaner code
+
+Improve handling of missing data (e.g., median by group)
+
+
