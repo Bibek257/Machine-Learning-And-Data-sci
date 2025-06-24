@@ -1,0 +1,106 @@
+# 🎓 Student Performance Prediction – Machine Learning Regression Project
+
+This project predicts students’ final academic performance (G3 grade) using various features such as study time, support systems, prior grades, and family 
+background. The goal is to develop and compare multiple regression models that can help identify factors contributing to academic outcomes.
+
+
+
+## 📁 Dataset Overview
+
+- Source: UCI Student Performance Dataset
+- File: student-mat.csv
+- Each row = one student
+- Target variable: G3 (final grade out of 20)
+
+### 🔍 Key Features Used
+
+| Feature     | Description                              |
+|-------------|------------------------------------------|
+| age         | Student's age                            |
+| studytime   | Weekly study hours                       |
+| failures    | Number of past class failures            |
+| schoolsup   | School-provided educational support      |
+| famsup      | Family educational support               |
+| internet    | Internet access at home                  |
+| freetime    | Free time after school                   |
+| absences    | Number of school absences                |
+| G1          | First period grade                       |
+| G2          | Second period grade                      |
+
+---
+
+## 🧼 Data Preprocessing
+
+- Removed irrelevant and duplicate columns
+- Encoded categorical/binary features
+- Handled outliers and checked for skewness
+- Standardized numeric features with StandardScaler
+- Split into training and testing sets (80/20)
+
+---
+
+## 📊 Exploratory Data Analysis (EDA)
+
+- Correlation heatmap
+- Distribution of final grade (G3)
+- Pairplots to explore numeric relationships
+- Boxplots to visualize impact of features like support or failures
+
+---
+
+## 🤖 Machine Learning Models Used
+
+| Model Type               | Description                                         |
+|--------------------------|-----------------------------------------------------|
+| Linear Regression        | Baseline model for linear relationships             |
+| Ridge Regression (L2)    | Regularized linear model to reduce overfitting      |
+| Lasso Regression (L1)    | L1 penalty to reduce and select features            |
+| Decision Tree Regressor  | Captures non-linear splits                          |
+| K-Nearest Neighbors (KNN)| Distance-based model using nearest neighbors        |
+| Support Vector Regressor | Uses kernel-based optimization for margin fitting   |
+
+✅ All models were evaluated using:
+- R² Score
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+
+---
+
+## 📈 Results & Insights
+
+- G1 and G2 (previous grades) are highly predictive of final G3 grade.
+- Support systems (school/family), study time, and failures also affect performance.
+- SVR and Ridge performed consistently well after scaling.
+- KNN performed best when tuned with an optimal k value.
+
+---
+
+## 🛠 Tools & Libraries
+
+- Python
+- NumPy, Pandas
+- Seaborn, Matplotlib
+- Scikit-learn (sklearn)
+
+How to run this project?
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repo
+2. Install required packages: numpy, pandas, matplotlib, seaborn, scikit-learn
+3. Open Student_Performance_prediction.ipynb in Jupyter or Colab
+4. Run all cells to see data processing, model training, and evaluation
+
+---
+
+## 🙏 Acknowledgements
+
+- Dataset provided by the UCI Machine Learning Repository
+- Inspired by real-world education analytics use cases
+
+---
+
+
+
